@@ -55,9 +55,9 @@ Suppose you have **A** samples with a variant in a population. You are performin
 Now we can ask the following question: *What is the probability of a having a real polymorphism* ***A*** *given our observation of variants in reads* ***B***? In other words *what is the probability of* ***A*** *given* ***B***? Or, as stated in the original [blog](https://oscarbonilla.com/2009/05/visualizing-bayes-theorem/): "*given that we are in region* ***B*** *what is the probability that we are in the region* ***AB***?":
 
 $$
- * *P(A\|B) = \|AB\|/\|B\|*.
- * Dividing by *\|U\|*: *P(A\|B) = (\|AB\|/\|U\|) / (\|B\|/\|U\|)*
- * Because we know that *P(AB) = \|AB\|/\|U\|* and *P(B) = \|B\|/\|U\|*, we can rewrite the equation in the previous bullet point as *P(A\|B) = P(AB)/P(B)*
+ * *P(A\B) = \AB\/\B\*.
+ * Dividing by *\U\*: *P(A\B) = (\AB\/\U\) / (\B\/\U\)*
+ * Because we know that *P(AB) = \AB\/\U\* and *P(B) = \B\/\U\*, we can rewrite the equation in the previous bullet point as *P(A\B) = P(AB)/P(B)*
 $$
 
 $$
