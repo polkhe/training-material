@@ -54,9 +54,28 @@ Suppose you have **A** samples with a variant in a population. You are performin
 
 Now we can ask the following question: *What is the probability of a having a real polymorphism* ***A*** *given our observation of variants in reads* ***B***? In other words *what is the probability of* ***A*** *given* ***B***? Or, as stated in the original [blog](https://oscarbonilla.com/2009/05/visualizing-bayes-theorem/): "*given that we are in region* ***B*** *what is the probability that we are in the region* ***AB***?":
 
- * *P(A|B) = |AB|/|B|*.
- * Dividing by *|U|*: *P(A|B) = (|AB|/|U|) / (|B|/|U|)*
- * Because we know that *P(AB) = |AB|/|U|* and *P(B) = |B|/|U|*, we can rewrite the equation in the previous bullet point as *P(A|B) = P(AB)/P(B)*
+$$
+ * *P(A\|B) = \|AB\|/\|B\|*.
+ * Dividing by *\|U\|*: *P(A\|B) = (\|AB\|/\|U\|) / (\|B\|/\|U\|)*
+ * Because we know that *P(AB) = \|AB\|/\|U\|* and *P(B) = \|B\|/\|U\|*, we can rewrite the equation in the previous bullet point as *P(A\|B) = P(AB)/P(B)*
+$$
+
+$$
+\begin{align*}
+  & \phi(x,y) = \phi \left(\sum_{i=1}^n x_ie_i, \sum_{j=1}^n y_je_j \right)
+  = \sum_{i=1}^n \sum_{j=1}^n x_i y_j \phi(e_i, e_j) = \\
+  & (x_1, \ldots, x_n) \left( \begin{array}{ccc}
+      \phi(e_1, e_1) & \cdots & \phi(e_1, e_n) \\
+      \vdots & \ddots & \vdots \\
+      \phi(e_n, e_1) & \cdots & \phi(e_n, e_n)
+    \end{array} \right)
+  \left( \begin{array}{c}
+      y_1 \\
+      \vdots \\
+      y_n
+    \end{array} \right)
+\end{align*}
+$$
 
 Now, let's ask an opposite question. Given a true polymorphism **A** what are the chances that we do detect it (*i.e.*, find ourselves in **AB**)? It will be *P(B|A) = P(AB)/P(A)*. So, because we know that *P(A|B) = P(AB)/P(B)* and we just reasoned that *P(B|A) = P(AB)/P(A)*, we can say that *P(A|B)P(B) = P(B|A)P(A)* leading us to the Bayes formula *P(A|B) = P(B|A)P(A)/P(B)*.
 
