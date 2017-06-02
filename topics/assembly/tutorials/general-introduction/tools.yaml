@@ -1,15 +1,15 @@
 ---
 api_key: admin
 galaxy_instance: http://localhost:8080
+tool_shed_url: https://toolshed.g2.bx.psu.edu/
+install_resolver_dependencies: True
+install_tool_dependencies: True
 tools:
 - name: velvetoptimiser
   owner: simon-gladman
   tool_panel_section_label: "ngs-assembly"
 - name: fasta_stats
   owner: simon-gladman
-  tool_panel_section_label: "ngs-assembly"
-- name: spades
-  owner: nml
   tool_panel_section_label: "ngs-assembly"
 - name: fastqc
   owner: devteam
