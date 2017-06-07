@@ -1,6 +1,8 @@
 ---
 api_key: admin
 galaxy_instance: http://localhost:8080
+install_tool_dependencies: False
+
 tools:
 - name: trim_galore
   owner: bgruening
@@ -29,5 +31,53 @@ tools:
 - name: picard
   owner: devteam
   tool_panel_section_label: "Picard"
+  tool_shed_url: https://toolshed.g2.bx.psu.edu
+  install_resolver_dependencies: True
+
+- name: fastqc
+  owner: devteam
+  tool_panel_section_label: "FastQC"
+  tool_shed_url: https://toolshed.g2.bx.psu.edu
+  install_resolver_dependencies: True
+
+- name: bwameth
+  owner: iuc
+  tool_panel_section_label: "BwaMeth"
+  tool_shed_url: https://toolshed.g2.bx.psu.edu
+  install_resolver_dependencies: True
+
+- name: bed_to_bigwig
+  owner: xuebing
+  tool_panel_section_label: "Bed to BigWig"
+  tool_shed_url: https://toolshed.g2.bx.psu.edu
+  install_resolver_dependencies: True
+
+- name: show_tail
+  owner: devteam
+  tool_panel_section_label: "Tail"
+  tool_shed_url: https://toolshed.g2.bx.psu.edu
+  install_resolver_dependencies: True
+
+- name: text_processing
+  owner: bgruening
+  tool_panel_section_label: "awk"
+  tool_shed_url: https://toolshed.g2.bx.psu.edu
+  install_resolver_dependencies: True
+
+- name: deeptools_compute_matrix
+  owner: bgruening
+  tool_panel_section_label: "Compute Matrix"
+  tool_shed_url: https://toolshed.g2.bx.psu.edu
+  install_resolver_dependencies: True
+
+- name: deeptools_plot_profile
+  owner: bgruening
+  tool_panel_section_label: "Plot Profile"
+  tool_shed_url: https://toolshed.g2.bx.psu.edu
+  install_resolver_dependencies: True
+
+- name: suite_deeptools
+  owner: bgruening
+  tool_panel_section_label: "DeepTools"
   tool_shed_url: https://toolshed.g2.bx.psu.edu
   install_resolver_dependencies: True
