@@ -2,6 +2,22 @@
 api_key: admin
 galaxy_instance: http://localhost:8080
 tools:
-- name: tool_name
-  owner: tool_owner
-  tool_panel_section_label: "Where to put the tool"
+- name: join
+  owner: iuc
+  tool_panel_section_label: "Join"
+- name: column_order_header_sort
+  owner: iuc
+  tool_panel_section_label: "Sort"
+- name: show_beginning
+  owner: devteam
+  tool_panel_section_label: "Select first lines"
+- name: 
+  owner: 
+  tool_panel_section_label: "Group"
+- name: 
+  owner: 
+  tool_panel_section_label: "Compare 2 datasets"
+
+
+
+

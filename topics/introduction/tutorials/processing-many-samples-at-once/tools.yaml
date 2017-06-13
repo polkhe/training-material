@@ -2,6 +2,15 @@
 api_key: admin
 galaxy_instance: http://localhost:8080
 tools:
-- name: tool_name
-  owner: tool_owner
-  tool_panel_section_label: "Where to put the tool"
+- name: bwa_mem
+  owner: crs4
+  tool_panel_section_label: "BWA mem"
+- name: picard
+  owner: devteam
+  tool_panel_section_label: "Picard"
+- name: suite_samtools_1_2
+  owner: devteam
+  tool_panel_section_label: "SAMtools"
+- name: merge_ds_flowtext
+  owner: immport-devteam
+  tool_panel_section_label: "Downsample"

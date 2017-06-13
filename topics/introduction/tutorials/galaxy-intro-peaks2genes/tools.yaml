@@ -2,6 +2,21 @@
 api_key: admin
 galaxy_instance: http://localhost:8080
 tools:
-- name: tool_name
-  owner: tool_owner
-  tool_panel_section_label: "Where to put the tool"
+- name: show_tail
+  owner: devteam
+  tool_panel_section_label: "Select last lines"
+- name: regex_find_replace
+  owner: galaxyp
+  tool_panel_section_label: "Replace Text"
+- name: get_flanks
+  owner: devteam
+  tool_panel_section_label: "Get Flanks"
+- name: bed_intersect
+  owner: xuebing
+  tool_panel_section_label: "Intersect"
+- name: column_maker
+  owner: devteam
+  tool_panel_section_label: "Compute expression"
+- name: cut_columns
+  owner: devteam
+  tool_panel_section_label: "Cut columns"
