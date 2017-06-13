@@ -2,6 +2,24 @@
 api_key: admin
 galaxy_instance: http://localhost:8080
 tools:
-- name: add_value
-  owner: devteam
-  tool_panel_section_label: "Where to put the tool"
+- name: msconvert
+  owner: galaxyp
+  tool_panel_section_label: "msconvert"
+- name: openms_peakpickerhires
+  owner: galaxyp
+  tool_panel_section_label: "PeakPickerHiRes"
+- name: peptideshaker
+  owner: galaxyp
+  tool_panel_section_label: "Peptide Shaker"
+- name: searchgui
+  owner: galaxyp
+  tool_panel_section_label: "Search GUI"
+- name: openms_decoydatabase
+  owner: galaxyp
+  tool_panel_section_label: "DecoyDatabase"
+- name: openms_fileconverter
+  owner: galaxyp
+  tool_panel_section_label: "FileConverter"
+- name: openms_peakpickerwavelet
+  owner: galaxyp
+  tool_panel_section_label: "PeakPickerWavelet"

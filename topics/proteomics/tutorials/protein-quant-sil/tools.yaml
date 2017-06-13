@@ -2,6 +2,16 @@
 api_key: admin
 galaxy_instance: http://localhost:8080
 tools:
-- name: add_value
-  owner: devteam
-  tool_panel_section_label: "Where to put the tool"
+- name: openms_featurefindermultiplex
+  owner: galaxyp
+  tool_panel_section_label: "FeatureFinderMultiplex"
+- name: openms_idfileconverter
+  owner: galaxyp
+  tool_panel_section_label: "IDConverter"
+- name: openms_proteinquantifier
+  owner: galaxyp
+  tool_panel_section_label: "ProteinQuantifier"
+- name: openms_fileinfo
+  owner: galaxyp
+  tool_panel_section_label: "FileInfo"
+

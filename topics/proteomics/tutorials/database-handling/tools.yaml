@@ -2,6 +2,21 @@
 api_key: admin
 galaxy_instance: http://localhost:8080
 tools:
+- name: dbbuilder
+  owner: galaxyp
+  tool_panel_section_label: "Database Downloader"
+- name: fasta_to_tabular
+  owner: devteam
+  tool_panel_section_label: "FASTA-to-Tabular"
 - name: add_value
   owner: devteam
-  tool_panel_section_label: "Where to put the tool"
+  tool_panel_section_label: "Add column"
+- name: fasta_merge_files_and_filter_unique_sequences
+  owner: galaxyp
+  tool_panel_section_label: "FASTA Merge Files and Filter Unique Sequences"
+- name: tabular_to_fasta
+  owner: devteam
+  tool_panel_section_label: "Tabular-to-FASTA"
+- name: openms_decoydatabase
+  owner: galaxyp
+  tool_panel_section_label: "DecoyDatabase"

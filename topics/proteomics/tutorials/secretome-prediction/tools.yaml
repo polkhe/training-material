@@ -2,6 +2,12 @@
 api_key: admin
 galaxy_instance: http://localhost:8080
 tools:
-- name: add_value
-  owner: devteam
-  tool_panel_section_label: "Where to put the tool"
+- name: tmhmm_and_signalp
+  owner: peterjc
+  tool_panel_section_label: "WoLF PSORT"
+- name: unique
+  owner: bgruening
+  tool_panel_section_label: "Unique"
+- name: join
+  owner: iuc
+  tool_panel_section_label: "Join"

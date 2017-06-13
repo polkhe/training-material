@@ -2,6 +2,9 @@
 api_key: admin
 galaxy_instance: http://localhost:8080
 tools:
-- name: add_value
-  owner: devteam
-  tool_panel_section_label: "Where to put the tool"
+- name: openms_msgfplusadapter
+  owner:  galaxyp
+  tool_panel_section_label: "MSGFPlusAdapter"
+- name: openms_peptideindexer
+  owner:  galaxyp
+  tool_panel_section_label: "PeptideIndexer"
