@@ -4,100 +4,37 @@ galaxy_instance: http://localhost:8080
 tools:
 - name: fastqc
   owner: devteam
-  tool_panel_section_label: 'NGS: QC and manipulation'
+  tool_panel_section_label: 'FastQC'
 
-- name: trimmomatic
-  owner: pjbriggs
-  tool_panel_section_label: 'NGS: QC and manipulation'
+- name: trim_galore
+  owner: bgruening
+  tool_panel_section_label: 'Trim Galore'
 
 - name: hisat2
   owner: iuc
-  tool_panel_section_label: 'NGS: RNA Analysis'
+  tool_panel_section_label: 'Hisat2'
 
-- name: stringtie
-  owner: iuc
-  tool_panel_section_label: 'NGS: RNA Analysis'
+- name: show_beginning
+  owner: devteam
+  tool_panel_section_label: 'Select first'
 
-- name: featurecounts
-  owner: iuc
-  tool_panel_section_label: 'NGS: RNA Analysis'
+- name: igvtools
+  owner: jjohnson
+  tool_panel_section_label: 'IGV'
+
+- name: htseq_count
+  owner: lparsons
+  tool_panel_section_label: 'HTSeq-count'
 
 - name: deseq2
   owner: iuc
-  tool_panel_section_label: 'NGS: RNA Analysis'
+  tool_panel_section_label: 'DESeq2'
 
-- name: gffcompare
+- name: column_order_header_sort
   owner: iuc
-  tool_panel_section_label: 'NGS: RNA Analysis'
+  tool_panel_section_label: "Sort"
 
-- name: cast
-  owner: moheydarian
-  tool_shed_url: https://testtoolshed.g2.bx.psu.edu/
-  tool_panel_section_label: 'Text Manipulation'
-
-- name: melt
-  owner: moheydarian
-  tool_shed_url: https://testtoolshed.g2.bx.psu.edu/
-  tool_panel_section_label: 'Text Manipulation'
-
-- name: ggplot_scatterplot
-  owner: moheydarian
-  tool_shed_url: https://testtoolshed.g2.bx.psu.edu/
-  tool_panel_section_label: 'Graph/Display Data'
-
-- name: ggplot_histogram
-  owner: moheydarian
-  tool_shed_url: https://testtoolshed.g2.bx.psu.edu/
-  tool_panel_section_label: 'Graph/Display Data'
-
-- name: ggplot_violin_plot
-  owner: moheydarian
-  tool_shed_url: https://testtoolshed.g2.bx.psu.edu/
-  tool_panel_section_label: 'Graph/Display Data'
-
-
-- name: collection_column_join
+- name: dexseq
   owner: iuc
-  tool_panel_section_label: 'Collection Operations'
+  tool_panel_section_label: "DEXSeq"
 
-- name: bundle_collections
-  owner: nml
-  tool_panel_section_label: 'Collection Operations'
-
-- name: collapse_collections
-  owner: nml
-  tool_panel_section_label: 'Collection Operations'
-
-- name: datamash_ops
-  owner: iuc
-  tool_panel_section_label: 'Text Manipulation'
-
-- name: datamash_reverse
-  owner: iuc
-  tool_panel_section_label: 'Text Manipulation'
-
-- name: datamash_transpose
-  owner: iuc
-  tool_panel_section_label: 'Text Manipulation'
-
-- name: tsne
-  owner: moheydarian
-  tool_shed_url: https://testtoolshed.g2.bx.psu.edu/
-  tool_panel_section_label: 'Graph/Display Data'
-
-- name: heatmap2
-  owner: moheydarian
-  tool_shed_url: https://testtoolshed.g2.bx.psu.edu/
-  tool_panel_section_label: 'Graph/Display Data'
-
-- name: column_maker
-  owner: devteam
-  tool_panel_section_label: 'Text Manipulation'
-
-- name: trimgalore 
-  owner: iuc
-  tool_panel_section_label: 'NGS: QC and manipulation'
-
-- name: dexseq 
-  owner: iuc
-  tool_panel_section_label: "NGS: RNA Analysis"
