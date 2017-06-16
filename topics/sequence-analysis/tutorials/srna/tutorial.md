@@ -84,17 +84,17 @@ Read quality scores (phred scores) in FASTQ-formatted data can be encoded by one
 >    - **Input FASTQ quality scores type**: Illumina 1.3-1.7
 >    - Repeat for the *klp10A* RNAi dataset collection
 >
->    ![](../images/image.png)
+>    ![](../../images/image.png)
 >
 > {: .hands_on}
 
 After `FASTQ Groomer` finishes, click on the groomed control sRNA-seq dataset collection and then click on the name of one of the datasets. You should see that the format is **fastqsanger** instead of **fastq**, meaning we have successfully converted the quality score encoding scheme.
 
-    ![](../images/image.png)
+    ![](../../images/image.png)
 
 If we go back to the FASTQC output and scroll down to the "Adapter Content" section, we can see that Illumina Small RNA adapters are present in ~80% of our reads. The next step is to remove these artificial adaptors because they will not map to the reference genome. If your reads contain a different adapter, update the **Adapter sequence to be trimmed off** in the `Trim Galore!` step.
 
-    ![](../images/image.png)
+    ![](../../images/image.png)
 
 ## Adaptor trimming
 
@@ -113,7 +113,7 @@ Small RNA sequencing library preparations involve adding an artificial adaptor s
 >    - **Discard reads that became shorter than length INT**: 12
 >    - **Generate a report file**: Yes
 >
->    ![](../images/image.png)
+>    ![](../../images/image.png)
 >
 >    We don't want to trim for quality because the adapter-trimmed sequences represent a full small RNA molecule, and we want to maintain the integrity of the entire molecule. We increase the minimum read length required to keep a read because small RNAs can potentially be shorter than 20 nt (the default value). We can check out the report file for any sample and see the command for the tool, a summary of the total reads processed and number of reads with an adapter identified, and histogram data of the length of adaptor trimmed. We also see that a very small percentage of low-quality bases have been trimmed
 >
@@ -135,7 +135,7 @@ Small RNA sequencing library preparations involve adding an artificial adaptor s
 >    >    </details>
 >    {: .question}
 >
-> ![](../images/image.png)
+> ![](../../images/image.png)
 >
 > {: .hands_on}
 
@@ -155,7 +155,7 @@ To quantify small RNA abundance and identify their putative targets, we need to 
 >    - **Spliced alignment parameters**: Specify spliced alignment parameters
 >    - **Specify strand-specific information**: First Strand (R/RF)
 >
->       ![](../images/image.png)
+>       ![](../../images/image.png)
 >
 >    We now need to extract the *unaligned* reads from the output BAM file for aligning to reference miRNA sequences. We can do this by using the `Filter SAM or BAM, output SAM or BAM` tool to obtain reads with the bit flag 4 (meaning the read is unaligned) and then converting the filtered BAM file to FASTQ format with the `Convert from BAM to FastQ` tool.
 >
@@ -177,7 +177,7 @@ To quantify small RNA abundance and identify their putative targets, we need to 
 >    - **Spliced alignment parameters**: Specify spliced alignment parameters
 >    - **Specify strand-specific information**: First Strand (R/RF)
 >
->       ![](../images/image.png)
+>       ![](../../images/image.png)
 >
 >    We now need to extract *unaligned* reads from the output BAM file for aligning to reference genome sequence. Repeat the `Filter SAM or BAM, output SAM or BAM` and `Convert from BAM to FastQ` steps to do this. Rename the converted FASTQ files something meaningful (*e.g.* "non-rRNA/miRNA control RNAi sRNA").
 >
@@ -206,7 +206,7 @@ To quantify small RNA abundance and identify their putative targets, we need to 
 > 1. **Tool** :wrench:: Run `Tool` on one collection of `HISAT` alignments using the default parameters.
 >    - Use batch mode to run all four samples from one tool form.
 >
-> ![](../images/image.png)
+> ![](../../images/image.png)
 >
 > {: .hands_on}
 
@@ -219,7 +219,7 @@ To quantify small RNA abundance and identify their putative targets, we need to 
 > 1. **Tool** :wrench:: Run `Tool` on the `Tool`-annotated small RNAs.
 >    - Use batch mode to inlcude all four `Stringtie` assemblies.
 >    - **Use Reference Annotation**: Yes, then select the "RefSeq GTF mm10" file.
-> ![](../images/image.png)
+> ![](../../images/image.png)
 >
 > {: .hands_on}
 >
@@ -242,7 +242,7 @@ The recommended mode is "union", which counts overlaps even if a read only share
 >
 >    - **TODO**
 >
-> ![](../images/image.png)
+> ![](../../images/image.png)
 >
 > {: .hands_on}
 >
@@ -307,4 +307,4 @@ In this last section, we will convert our aligned read data from BAM format to b
 
 **TODO**
 
-![](../images/schematic_for_sRNAseq_tutorial.png)
+![](../../images/schematic_for_sRNAseq_tutorial.png)

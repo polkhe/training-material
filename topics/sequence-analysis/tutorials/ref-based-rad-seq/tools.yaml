@@ -4,4 +4,13 @@ galaxy_instance: http://localhost:8080
 tools:
 - name: suite_stacks
   owner: iuc
-  tool_panel_section_label: "RAD-Seq"
+  tool_panel_section_label: "Stacks"
+- name: fastqc
+  owner: devteam
+  tool_panel_section_label: "FastQC"
+- name: concatenate_multiple_datasets
+  owner: mvdbeek
+  tool_panel_section_label: "Concatenate datasets tail-to-head"
+- name: bwa
+  owner: devteam
+  tool_panel_section_label: "BWA"

@@ -4,8 +4,8 @@ galaxy_instance: http://localhost:8080
 tools:
 - name: fastqc
   owner: devteam
-  tool_panel_section_label: "Quality Control"
+  tool_panel_section_label: "FastQC"
 
 - name: trim_galore
   owner: bgruening
-  tool_panel_section_label: "Quality Control"
+  tool_panel_section_label: "Trim Galore"
