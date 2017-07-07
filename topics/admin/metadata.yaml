@@ -15,7 +15,7 @@ material:
     name: "dev-to-production"
     zenodo_link: ""
     galaxy_tour: ""
-    hands_on: "github"
+    hands_on: "yes"
     slides: "no"
     questions:
     - ""
@@ -87,6 +87,10 @@ maintainers:
 -
     name: "Martin Chech"
     github_username: "martenson"
+    email: ""
+-
+    name: "Eric Rasche"
+    github_username: "erasche"
     email: ""
 
 contributors:
