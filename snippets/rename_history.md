@@ -1,3 +1,12 @@
+<!--
+type: tip box
+location: inside a box
+arguments:
+    required:
+        none
+    optional:
+        none
+-->
 >
 >    > ### {% icon tip %} Tip: Rename an history
 >    >

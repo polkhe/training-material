@@ -1,3 +1,12 @@
+<!--
+type: tip box
+location: inside a box
+arguments:
+    required:
+        none
+    optional:
+        name: new name of the dataset
+-->
 >
 >    > ### {% icon tip %} Tip: Rename a dataset
 >    > - Click on the {% icon galaxy-pencil %} **pencil icon** for the dataset to edit its attributes

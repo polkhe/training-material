@@ -1,3 +1,12 @@
+<!--
+type: tip box
+location: in a tutorial
+arguments:
+    required:
+        none
+    optional:
+        none
+-->
 > ### {% icon tip %} Tip: Running Ansible on your remote machine
 > It is possible to have ansible installed on the remote machine and run it there, not just from your local machine connecting to the remote machine.
 >

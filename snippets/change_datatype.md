@@ -1,3 +1,12 @@
+<!--
+type: tip box
+location: inside a box
+arguments:
+    required:
+        datatype: new datatype of the dataset
+    optional:
+        none
+-->
 >
 >    > ### {% icon tip %} Tip: Changing the datatype
 >    > * Click on the {% icon galaxy-pencil %} **pencil icon** for the dataset to edit its attributes

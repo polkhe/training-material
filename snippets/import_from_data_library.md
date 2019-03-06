@@ -1,3 +1,12 @@
+<!--
+type: tip box
+location: inside a box
+arguments:
+    required:
+        astype: choose as what type of the data to save
+    optional:
+        path: path to the data (if known)
+-->
 >
 >    > ### {% icon tip %} Tip: Importing data from a data library
 >    >

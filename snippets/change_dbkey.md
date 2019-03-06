@@ -1,3 +1,12 @@
+<!--
+type: tip box
+location: inside a box
+arguments:
+    required:
+        dbkey: database key
+    optional:
+        none
+-->
 >
 >    > ### {% icon tip %} Tip: Changing Database/Build (dbkey)
 >    > - Click on the {% icon galaxy-pencil %} **pencil icon** for the dataset to edit its attributes

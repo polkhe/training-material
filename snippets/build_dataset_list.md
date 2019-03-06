@@ -1,3 +1,12 @@
+<!--
+type: tip box
+location: inside a box
+arguments:
+    required:
+        none
+    optional:
+        none
+-->
 >
 >    > ### {% icon tip %} Tip: Build a dataset list
 >    > * Click on {% icon galaxy-selector %} **Operations on multiple datasets** at the top of the history panel

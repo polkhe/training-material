@@ -1,3 +1,12 @@
+<!--
+type: tip box
+location: inside a box
+arguments:
+    required:
+        none
+    optional:
+        convertspaces: boolean to define if spaces should be converted to tabs
+-->
 >
 >    > ### {% icon tip %} Tip: Creating a new file
 >    >

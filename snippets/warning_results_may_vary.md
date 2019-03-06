@@ -1,3 +1,12 @@
+<!--
+type: comment box
+location: in a tutorial
+arguments:
+    required:
+        none
+    optional:
+        none
+-->
 > ### {% icon comment %} Note: results may vary
 >
 > Your results may be slightly different from the ones presented in this tutorial
